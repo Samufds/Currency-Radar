@@ -40,6 +40,6 @@ git clone https://github.com/your-username/currency-radar.git
 - Used login and saved currency pairs with a conversion history
 - Rate alert notification at a set target rate
 
-## Authon
+## Author
 
 Samuel Fernandes
