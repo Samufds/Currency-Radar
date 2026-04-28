@@ -31,6 +31,8 @@ git clone https://github.com/your-username/currency-radar.git
 
 ## Screenshots
 
+![image alt](ss.png)
+
 
 
 ## Upcoming Imporvements
