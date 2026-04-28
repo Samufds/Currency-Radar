@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href='#' onclick="reload()" class="logo">
+                <img src="images/convert.png" alt="logo">
+            </a>
+            <h1>Currency Radar</h1>
+        </div>
+    </nav>
+    <hr>
+</body>
+<main>
+    <div class="wrapper">
+        <header>
+            Currency Converter
+        </header>
+        <form action="#">
+            <div class="drop-list">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-box">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="flag">
+                        <select></select>
+                    </div>
+                </div>
+                <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-box">
+                        <img src="https://flagsapi.com/KW/flat/64.png" alt="flag">
+                        <select></select>
+                    </div>
+                </div>
+            </div>
+            <div class="amount">
+                <p>Amount</p>
+                <input type="number" placeholder="Enter amount" required>
+            </div>
+            <div class="result-box">
+                <div class="exchange-rate">Getting Exchange Rate...</div>
+            </div>
+                <button> Get Exchange Rate</button>
+        </form>
+    </div>
+    <div class="news-section">
+        <h1>News</h1>
+        <hr>
+        <input type="text" placeholder="Search News..." id="search-input" >
+        <button id="search-btn" class="search-btn">Search</button>
+        <div class="news-container flex" id="news-container">
+        </div>
+        <template id="template-news-card">
+            <div class="card">
+                <img src="https://unsplash.it/300/200"  id="news-img" alt="News Image">
+                <h6 class="news-title" id="news-title">News Title</h6>
+                <p class="news-content" id="news-content">News content goes here...</p>
+            </div>
+        </template>
+    </div>
+    <script src="js/country-list.js"></script>
+    <script src="js/script.js"></script>
+</main>
+</html>

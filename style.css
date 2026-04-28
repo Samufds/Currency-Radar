@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+nav {
+    background: #f4f6f8;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 90px;
+}
+
+main {
+    display: flex;
+    justify-content: left;
+    margin-left: 90px;
+    margin-right: 90px;
+    min-height: 100vh;
+    background: #f4f6f8;
+    padding: 40px 20px;
+}
+
+.wrapper {
+    background: white;
+    width: 600px;
+    height: 500px;
+    padding: 30px;
+    border-radius: 30px;
+    justify-content: left;
+}
+
+.wrapper header {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: left;   
+}
+
+.wrapper form {
+    margin-top: 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+form :where(input, select) {
+    width: 100%;
+    outline: none;
+    border-width: 0.5px;
+    border-color: grey;
+}
+
+form :where(select) {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+form p {
+  font-size: 18px;
+  margin-bottom: 5px;  
+}
+
+form input {
+    height: 50px;
+    font-size: 18px;
+    padding: 0 15px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+form input:focus {
+    padding: 0 14px;
+    border: 2px solid #000;
+}
+
+form .drop-list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.amount {
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.drop-list .select-box {
+    display: flex;
+    height: 60px;
+    width: 130px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.select-box select {
+    width: auto;
+    font-size: 15px;
+}
+
+.select-box img {
+    max-width: 60px;
+}
+
+.drop-list .icon {
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+form .exchange-rate {
+    font-size: 25px;
+    margin: 20px 0 20px;
+    padding-top: 20px;
+    padding-left: 150px;
+}
+
+form button {
+    height: 50px;
+    font-size: 18px;
+    color: #fff;
+    background: #000000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: rgb(41, 40, 40);
+}
+
+
+.news-section {
+    background: white;
+    margin-left: 80px;
+    width: 800px;
+    height: 800px;
+    padding: 30px 20px;
+    padding-right: 10px;
+    border-radius: 30px;
+}
+
+.news-section h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.news-section #search-input {
+    margin-top: 20px;
+    width: 600px;
+    height: 40px;
+    font-size: 18px;
+    padding: 0 15px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.search-btn {
+    height: 42px;
+    width: 140px;
+    font-size: 18px;
+    padding: 10px;
+    color: #fff;
+    background: #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background: rgb(41, 40, 40);
+}
+
+.card {
+    margin-top: 20px;
+    width: 740px;
+    min-height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+
+.news-container .card img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.news-container .news-title {
+    display: flex;
+}
+
+.news-container .news-content {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.news-container.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.result-box {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 600px;
+    min-height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    nav {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    main {
+        padding: 20px 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .wrapper {
+        padding: 20px;
+        border-radius: 20px;
+    }
+    
+    .news-section {
+        padding: 20px;
+        border-radius: 20px;
+    }
+    
+    .card {
+        max-width: 100%;
+        padding: 15px;
+    }
+    
+    .drop-list {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .select-box {
+        width: 100%;
+    }
+    
+    .search-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .result-box {
+        width: 100%;
+        max-width: 500px;
+    }
+}
