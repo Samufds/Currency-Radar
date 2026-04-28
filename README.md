@@ -19,9 +19,11 @@ A currency converter with live exchange rates and realtime news. You can select 
 
 **1. Clone the repo**
 
-''' 
+```
+
 git clone https://github.com/your-username/currency-radar.git
-'''
+
+```
 
 **2. Open 'Index.html' in your browser**
 
