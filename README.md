@@ -41,7 +41,3 @@ git clone https://github.com/your-username/currency-radar.git
 - Historical exchange rate chart
 - Used login and saved currency pairs with a conversion history
 - Rate alert notification at a set target rate
-
-## Author
-
-Samuel Fernandes
