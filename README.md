@@ -1,6 +1,6 @@
 ## Currency Radar
 
-A currency converter with live exchange rates and realtime news. You can select any two currencies to convert, you can also swap them and get the coversion rate, and get news specific to the currencies you have selected.
+A currency converter with live exchange rates and realtime news. That let's you select any currency you wish to convert and also lets you swap them and get the coversion with currency specific news based on the selected currencies.
 
 ## Features
 
