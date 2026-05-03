@@ -35,7 +35,7 @@ git clone https://github.com/Samufds/Currency-Radar.git
 
 
 
-## Upcoming Imporvements
+## Future Imporvements
 
 - To add a backend to secure API keys
 - Historical exchange rate chart
