@@ -1,4 +1,4 @@
-## Currency Radar
+# Currency Radar
 
 A currency converter with live exchange rates and realtime news. That let's you select any currency you wish to convert and also lets you swap them and get the coversion with currency specific news based on the selected currencies.
 
