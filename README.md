@@ -29,7 +29,7 @@ git clone https://github.com/Samufds/Currency-Radar.git
 
 **Note:** API keys are currently exposed in the frontend. A backend proxy will be added in a upcoming update to secure them.
 
-## Screenshots
+## Preview
 
 ![image alt](ss.png)
 
