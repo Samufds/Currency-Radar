@@ -21,7 +21,7 @@ A currency converter with live exchange rates and realtime news. That let's you 
 
 ```
 
-git clone https://github.com/your-username/currency-radar.git
+git clone [https://github.com/Samufds/Currency-Radar].git
 
 ```
 
