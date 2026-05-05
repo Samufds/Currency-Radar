@@ -33,11 +33,3 @@ git clone https://github.com/Samufds/Currency-Radar.git
 
 ![image alt](ss.png)
 
-
-
-## Future Imporvements
-
-- To add a backend to secure API keys
-- Historical exchange rate chart
-- Used login and saved currency pairs with a conversion history
-- Rate alert notification at a set target rate
