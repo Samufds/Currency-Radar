@@ -31,5 +31,6 @@ git clone https://github.com/Samufds/Currency-Radar.git
 
 ## Preview
 
-![image alt](ss.png)
+![image alt](Redesign.png)
+![image alt](search.png)
 
