@@ -24,6 +24,29 @@ for (let i = 0; i < dropList.length; i++) {
 fromCurrency.addEventListener("change", () => fetchNews(fromCurrency.value));
 toCurrency.addEventListener("change", () => fetchNews(toCurrency.value));
 
+const currencyPills = document.querySelectorAll(".currency-pill");
+
+currencyPills.forEach((pill) => {
+    pill.addEventListener("click", () => {
+        const currency = pill.dataset.currency;
+        setFromCurrency(currency);
+        setActivePill(currency);
+    });
+});
+
+function setActivePill(currency) {
+    currencyPills.forEach((pill) => {
+        pill.classList.toggle("active", pill.dataset.currency === currency);
+    });
+}
+
+function setFromCurrency(currency) {
+    fromCurrency.value = currency;
+    loadFlag(fromCurrency);
+    getExchangeRate();
+    fetchNews(currency);
+}
+
 function reload(){
     window.location.reload();
 }
@@ -64,6 +87,7 @@ function getExchangeRate(){
         amount.value = "1";
         amountVal = 1;
     }
+    
     
     exchangeRateTxt.innerText = "Getting exchange rate...";
     let url = `https://v6.exchangerate-api.com/v6/397bcb245cc54483b9867b35/latest/${fromCurrency.value}`;
